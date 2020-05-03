@@ -28,4 +28,5 @@ async def reload(ctx, extension: str):
 
 @gyoji_bot.event
 async def on_ready():
-    log.info("Ready")
+    await gyoji_bot.change_presence(status=discord.Status.online, activity=discord.Game('Sumo - Ready to swing a Gunbai'))
+    log.info('Ready')
