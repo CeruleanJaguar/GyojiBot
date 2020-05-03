@@ -9,7 +9,11 @@ class Slohyo(commands.Cog):
     
     # Commands
     
-    @commands.command(name='Submit Slohyo', aliases=['allow me to submit a slohyo'])
+    @commands.command(
+        name='Submit Slohyo',
+        aliases=['allow me to submit a slohyo'],
+        description='Submit a Slohyo form in discord. Requires you to mention your opponent. GyojiBot will direct message you to complete the form.'
+    )
     async def submit_slohyo(self, ctx):
         author = ctx.author
         opponent = 'nil'
